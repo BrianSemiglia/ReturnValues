@@ -4,7 +4,7 @@ ReturnValues
 I’ve been trying to think of small, practical ways to improve my code. This is the latest that I’m trying to adopt.
 
 Approach: 
-Try to return values from my methods as often as I can. 
+    Try to return values from my methods as often as I can. 
 
 Reasoning:
 
@@ -21,5 +21,5 @@ This method does not make certain what it does. It is most likely doing somethin
     - (NSSet *)processedMessages;
 This method does not specify exactly what it’s doing either but it returns a value that can be inspected and gives more faith that it’s not doing more than it says it is.
 
-    - (void)processWithIterationHandler:(void (^)(Message *processedMessage))iterationHandler;
+    - (void)processMessagesWithIterationHandler:(void (^)(Message *processedMessage))iterationHandler;
 The third is semantic exception in that it technically returns void right away but it will return the messages eventually. This approach also allows you to explicitly set the return type, which you cannot do with an array/set.

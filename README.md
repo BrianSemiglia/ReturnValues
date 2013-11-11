@@ -3,13 +3,14 @@ ReturnValues
 
 I’ve been trying to think of small, practical ways to improve my code. This is the latest that I’m trying to adopt.
 
-Approach: Try to return values from my methods as often as I can. 
+Approach: 
+Try to return values from my methods as often as I can. 
 
 Reasoning:
-Values can be inspected. 
-Values can be tested. 
-The concept of a value decreases emphasis of time sensitivity/dependency.
-It makes it hard to do more than one thing within a single method.
+1. Values can be inspected. 
+2. Values can be tested. 
+3. The concept of a value decreases emphasis of time sensitivity/dependency.
+4. It makes it hard to do more than one thing within a single method.
 
 Examples:
 

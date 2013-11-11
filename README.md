@@ -19,7 +19,7 @@ Examples:
 This method does not make certain what it does. It is most likely doing something to the message after it has been processed as doing nothing after bothering to process them would be wasteful.
 
     - (NSSet *)processedMessages;
-This method does not specify exactly what it’s doing either but it returns a value that can be inspected and gives more faith that it’s not doing more than it says it is.
+This method does not specify exactly what it’s doing either but it returns a value that can be inspected and gives more faith that it’s not doing more than it says it is. The processed messages are also now free to be used as the caller sees fit once processed.
 
     - (void)processMessagesWithIterationHandler:(void (^)(Message *processedMessage))iterationHandler;
-The third is semantic exception in that it technically returns void right away but it will return the messages eventually. This approach also allows you to explicitly set the return type, which you cannot do with an array/set.
+The third is semantic exception in that it technically returns void right away but will return the messages eventually. This approach also allows you to explicitly set the return type, which you cannot do with an array/set.

@@ -7,6 +7,7 @@ Approach:
 Try to return values from my methods as often as I can. 
 
 Reasoning:
+
 1. Values can be inspected. 
 2. Values can be tested. 
 3. The concept of a value decreases emphasis of time sensitivity/dependency.
